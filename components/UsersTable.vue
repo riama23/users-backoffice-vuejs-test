@@ -18,6 +18,7 @@
       <template v-slot:item.actions="{ item }">
         <NuxtLink :to="'/users/'+item.id">
           <v-btn
+            class="color-primary"
             x-small
             color="primary"
             plain

@@ -162,6 +162,7 @@
             <v-btn
               v-if="method === 'update'"
               color="error"
+              plain
               @click="deleteUser"
             >
               Delete
@@ -326,4 +327,11 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+  .v-card__title {
+    background: linear-gradient(145deg, rgba(120,62,141,1) 55%, rgba(173,110,199,1) 100%);
+    color: white;
+  }
+</style>
 

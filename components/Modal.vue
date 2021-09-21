@@ -1,24 +1,24 @@
 <template>
-  <div class="text-center">
+  <div class='text-center'>
     <v-dialog
-      v-model="active"
-      width="500"
+      v-model='active'
+      width='500'
     >
-      <template v-slot:activator="{ on, attrs }">
+      <template v-slot:activator='{ on, attrs }'>
         <div
-          v-bind="attrs"
-          v-on="on"
+          v-bind='attrs'
+          v-on='on'
         >
           <slot></slot>
         </div>
       </template>
 
       <v-card>
-        <v-card-title class="text-h5 grey lighten-2">
+        <v-card-title class='text-h5 grey lighten-2'>
           {{ title }}
         </v-card-title>
 
-        <v-card-text class="my-4">
+        <v-card-text class='my-4'>
           <p>{{ dialogModal }}</p>
         </v-card-text>
 
@@ -27,9 +27,9 @@
         <v-card-actions>
           <v-spacer></v-spacer>
           <v-btn
-            color="primary"
+            color='primary'
             text
-            @click="accept"
+            @click='accept'
           >
             Accept
           </v-btn>
@@ -39,11 +39,11 @@
   </div>
 </template>
 
-<script lang="js">
+<script lang='js'>
 export default {
-  name: "Modal",
+  name: 'Modal',
   data() {
-    const active = false;
+    const active = false
 
     return {
       active
@@ -56,16 +56,18 @@ export default {
   },
   methods: {
     accept() {
-      this.active = false;
+      this.active = false
 
-      if (this.action === 'delete'){
-        return this.$router.push('/users');
+      if (this.action === 'delete') {
+        return this.$router.push('/users')
       }
     }
   }
 }
 </script>
 
-<style scoped>
-
+<style lang='scss' scoped>
+.v-card__title.lighten-2 {
+  background: linear-gradient(145deg, rgba(120, 62, 141, 1) 55%, rgba(173, 110, 199, 1) 100%) !important;
+}
 </style>

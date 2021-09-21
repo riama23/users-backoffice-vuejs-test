@@ -2,6 +2,7 @@
   <v-app>
     <v-navigation-drawer
       app
+      class="bg-gradient"
       v-model="drawer"
       :absolute="isMobile"
       :temporary="isMobile"
@@ -76,7 +77,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style lang='scss' scoped>
 .v-main {
   background-color: #eef2f5;
 }
@@ -84,5 +85,24 @@ export default {
 a {
   display: flex;
   text-decoration: none;
+}
+
+
+.bg-gradient {
+  background: linear-gradient(145deg, rgba(120,62,141,1) 55%, rgba(173,110,199,1) 100%);
+
+  .v-list-item--link {
+    color: white !important;
+
+    &:hover {
+      background: rgba(255,255,255,.3) !important;
+      box-shadow: inset 0 -3px 0 0 #fff;
+      transition: box-shadow ease-in 200ms, background ease-in 350ms;
+    }
+
+    .v-icon {
+      color: white;
+    }
+  }
 }
 </style>
