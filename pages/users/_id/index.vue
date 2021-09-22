@@ -5,7 +5,7 @@
     <v-row class="">
       <v-col cols="12" class="d-flex justify-end">
         <ModalCreateUser method="update">
-          <v-btn color="primary" plain>Edit</v-btn>
+          <v-btn color="accent">Edit</v-btn>
         </ModalCreateUser>
       </v-col>
     </v-row>

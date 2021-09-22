@@ -79,7 +79,9 @@ export default {
 
 <style lang='scss' scoped>
 .v-main {
-  background-color: #eef2f5;
+  background: url("/images/back.png");
+  backdrop-filter: blur(3px);
+  background-position-x: right;
 }
 
 a {
