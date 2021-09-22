@@ -18,8 +18,15 @@ export default {
       {name: 'format-detection', content: 'telephone=no'}
     ],
     link: [
-      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'}
-    ]
+      {rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
+      {rel: "apple-touch-icon", sizes:"180x180", href:"https://everymatrix.com/wp-content/themes/em/img/favicon/rgs/apple-touch-icon.png"},
+      {rel: "icon", type:"image/png", sizes:"32x32", href:"https://everymatrix.com/wp-content/themes/em/img/favicon/rgs/favicon-32x32.png"},
+      {rel: "icon", type:"image/png", sizes:"16x16", href:"https://everymatrix.com/wp-content/themes/em/img/favicon/rgs/favicon-16x16.png"},
+      {rel: "manifest", href:"https://everymatrix.com/wp-content/themes/em/img/favicon/rgs/site.webmanifest"},
+      {rel: "mask-icon", href:"https://everymatrix.com/wp-content/themes/em/img/favicon/rgs/safari-pinned-tab.svg"},
+      {rel: "shortcut icon", href:"https://everymatrix.com/wp-content/themes/em/img/favicon/rgs/favicon.ico"},
+
+                ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -60,8 +67,8 @@ export default {
     theme: {
       dark: false,
       themes: {
-        dark: {
-          primary: colors.blue.darken2,
+        light: {
+          primary: colors.purple.lighten1,
           accent: colors.grey.darken3,
           secondary: colors.amber.darken3,
           info: colors.teal.lighten1,
